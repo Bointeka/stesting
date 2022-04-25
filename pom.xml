@@ -110,7 +110,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.8</version>
+			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -145,7 +145,6 @@
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>3.141.59</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -201,7 +200,13 @@
 				</configuration>
 			</plugin>
 		</plugins>
-
+		<testResources>
+			<testResource>
+				<directory>
+					src/main/java/com/example/slabiak/appointmentscheduler
+				</directory>
+			</testResource>
+		</testResources>
 	</build>
 
 </project>
